@@ -1,88 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   <title>Bhavya Bhatt - Portfolio</title>
   <style>
-    /* Additional custom styling can be added here */
-    body {
-      background-image: url('bg.avif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-color: rgba(255, 255, 255, 0.9); /* Transparent effect */
+    :root {
+      --bg-color: #FFFFFF;
+      --text-color: #333333;
+      --icon-color: #333333;
+      --toggle-bg-color: #FFFFFF;
+      --toggle-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .project2 {
-      background-image: url('bg.avif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+    :root.dark-theme {
+      --bg-color: #1E1E1E;
+      --text-color: #E5E5E5;
+      --icon-color: #E5E5E5;
+      --toggle-bg-color: #333333;
+      --toggle-box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
     }
 
     .section-heading {
-      color: #333; /* Dark font color */
+      color: var(--text-color);
+    }
+
+    .text-gray-700 {
+      color: #CCCCCC;
+    }
+
+    .text-gray-200 {
+      color: #999999;
+    }
+
+    .text-gray-500 {
+      color: #CCCCCC;
+    }
+
+    .text-blue-500 {
+      color: #3399FF;
+    }
+
+    .hover\:text-gray-400:hover {
+      color: #B3B3B3;
+    }
+
+    .hover\:text-gray-400:focus {
+      color: #B3B3B3;
+    }
+
+    .hover\:text-blue-400:hover {
+      color: #0066CC;
+    }
+
+    .hover\:text-blue-400:focus {
+      color: #0066CC;
+    }
+
+    .bg-transparent {
+      background-color: transparent;
+    }
+
+    .bg-vedic-maths {
+      background-color: var(--bg-color);
+    }
+
+    .bg-white {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    .bg-blue-500 {
+      background-color: #3399FF;
+    }
+
+    .hover\:bg-blue-600:hover {
+      background-color: #0066CC;
+    }
+
+    .hover\:bg-blue-600:focus {
+      background-color: #0066CC;
+    }
+
+    /* Theme toggle styles */
+    .theme-toggle {
+      position: absolute;
+      top: 12px;
+      left: 1300px;
+      cursor: pointer;
+      color: var(--icon-color);
+      background-color: var(--toggle-bg-color);
+      border-radius: 50%;
+      padding: 8px;
+      box-shadow: var(--toggle-box-shadow);
+    }
+
+    /* Dark theme icon color */
+    :root.dark-theme .theme-toggle i {
+      color: var(--icon-color);
+    }
+
+    /* Bold project headings */
+    .project-heading {
+      font-weight: bold;
     }
   </style>
 </head>
+
 <body>
   <header class="bg-transparent shadow">
     <nav class="container mx-auto px-4 py-2 flex items-center justify-between">
-      <div>
-        <h1 class="text-lg font-bold">Bhavya Bhatt</h1>
-        <p class="text-sm text-gray-500">Class 12th | Science Stream</p>
+
+      <h1 class="text-lg font-bold">Bhavya Bhatt</h1>
+      <p class="text-sm text-gray-500">Class 12th | Science Stream</p>
       </div>
       <ul class="flex space-x-4">
         <li><a href="#about" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">About</a></li>
-        <li><a href="#projects" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">Projects</a></li>
-        <li><a href="#contact" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">Contact</a></li>
+        <li><a href="#projects" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">Projects</a>
+        </li>
+        <li><a href="#contact" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">Contact</a>
+          <div class="theme-toggle ml-2" onclick="toggleTheme()">
+            <i class="far fa-moon"></i>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
 
+
   <main class="container mx-auto px-4 py-8">
     <section id="about" class="mb-8">
       <h2 class="text-2xl font-bold mb-4 section-heading">About Me</h2>
-      <p class="text-gray-700">Hello, I'm Bhavya Bhatt, a class 12th student at Kendriya Vidyalaya Pragati Vihar, pursuing PCM+CS. I have a passion for computer science and technology, which led me to choose this stream in my studies.
-        <p class="text-gray-700">
-        In addition to my academic achievements, I actively participate in extracurricular activities. One notable accomplishment was securing the 2nd position in the SLSMEE exhibition, where I showcased my skills and knowledge in computer science and technology.
-        </p>
-        I am proficient in Python programming language, which allows me to develop innovative solutions and explore various aspects of computer science. I have worked on several projects during my studies, including the "Vedic Maths Tutorial" for the SLSMEE project and a "Basic Billing Software" for my class 11th CBSE project. These projects demonstrate my ability to apply theoretical knowledge in practical scenarios.
-        <p class="text-gray-700">
-        Beyond my academic pursuits, I have a diverse range of hobbies and interests. I enjoy playing badminton, gaming, and traveling. These activities not only help me relax and rejuvenate but also enhance my overall personality and well-being.
-        </p>
-        While I haven't participated in any internships, workshops, or training programs yet, I am eager to explore these opportunities in the future to further develop my skills and gain practical experience.
-        As I look ahead, I have ambitious career goals in the field of computer science and technology. I aspire to make a positive impact by contributing to technological advancements and innovation.
-        Thank you for visiting my portfolio website. Feel free to explore and get in touch with me if you have any inquiries or collaboration opportunities..
+      <p id="typed-text" class="about-text"></p>
+      <p class="text-gray-700">
+        <script>
+          var typed = new Typed('#typed-text', {
+            strings: ['Hello, I\'m Bhavya Bhatt, a class 12th student at Kendriya Vidyalaya Pragati Vihar, pursuing PCM+CS.', 'I have a passion for computer science and technology, which led me to choose this stream in my studies.', 'In addition to my academic achievements, I actively participate in extracurricular activities.', 'One notable accomplishment was securing the 2nd position in the SLSMEE exhibition, where I showcased my skills and knowledge in computer science and technology.', 'I am proficient in Python programming language, which allows me to develop innovative solutions and explore various aspects of computer science.', 'Beyond my academic pursuits, I have a diverse range of hobbies and interests.', 'While I haven\'t participated in any internships, workshops, or training programs yet, I am eager to explore these opportunities in the future to further develop my skills and gain practical experience.', 'As I look ahead, I have ambitious career goals in the field of computer science and technology. I aspire to make a positive impact by contributing to technological advancements and innovation.', 'Thank you for visiting my portfolio website. Feel free to explore and get in touch with me if you have any inquiries or collaboration opportunities.'],
+            typeSpeed: 30,
+            backSpeed: 20,
+            loop: true
+          });
+        </script>
     </section>
 
     <section id="projects" class="mb-8">
       <h2 class="text-2xl font-bold mb-4 section-heading">Projects</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="bg-vedic-maths p-4 shadow">
-          <h3 class="text-lg font-bold mb-2">Vedic Maths Tutorial</h3>
-          <p class="text-gray-700">Vedic Maths Tutorial is an educational project aimed at teaching children about Vedic mathematics. It is developed using the Python GUI library, Tkinter. The project provides interactive lessons and practice exercises to help children improve their mathematical skills through the application of Vedic math techniques.</p>
+          <h3 class="text-lg font-bold mb-2 project-heading">Vedic Maths Tutorial</h3>
+          <p class="text-gray-700-bold">Vedic Maths Tutorial is an educational project aimed at teaching children about
+            Vedic
+            mathematics. It is developed using the Python GUI library, Tkinter. The project provides interactive lessons
+            and practice exercises to help children improve their mathematical skills through the application of Vedic
+            math techniques.</p>
           <div class="flex flex-wrap md:flex-nowrap items-center justify-between mt-4">
             <img src="Capture1.PNG" alt="Screenshot 1" class="h-48 w-auto">
             <img src="Capture2.PNG" alt="Screenshot 2" class="h-48 w-auto">
           </div>
           <div class="mt-4">
-            <a href="vedic maths.zip" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Download Source Code (ZIP)</a>
+            <a href="vedic maths.zip" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Download
+              Source Code (ZIP)</a>
           </div>
         </div>
         <div class="project2 bg-white p-4 shadow">
-          <h3 class="text-lg font-bold mb-2">Basic Billing Software</h3>
-          <p class="text-gray-700">Basic Billing Software is a project developed using Python fundamentals. It is designed to help class 11th students understand the basics of programming and create a simple billing system. The software allows users to generate bills, calculate totals, and manage customer transactions and also give invoices.</p>
+          <h3 class="text-lg font-bold mb-2 project-heading">Basic Billing Software</h3>
+          <p class="text-gray-700-bold">Basic Billing Software is a project developed using Python fundamentals. It is
+            designed to help class 11th students understand the basics of programming and create a simple billing
+            system. The software allows users to generate bills, calculate totals, and manage customer transactions and
+            also give invoices.</p>
           <div class="flex flex-wrap md:flex-nowrap items-center justify-between mt-4">
             <img src="Capture3.PNG" alt="Screenshot 3" class="h-48 w-auto">
             <img src="Capture4.PNG" alt="Screenshot 4" class="h-48 w-auto">
           </div>
           <div class="mt-4">
-            <a href="XIComp.Sc.262.zip" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Download Source Code (ZIP)</a>
+            <a href="XIComp.Sc.262.zip" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Download
+              Source Code (ZIP)</a>
+          </div>
+        </div>
+        <div class="project 3 bg-white p-4 shadow">
+          <h3 class="text-lg font-bold mb-2 project-heading">Conversion between number system</h3>
+          <p class="text-gray-700-bold">The given code appears to be a Python program that converts numbers between
+            different number systems. It provides options to convert numbers from binary, octal, and hexadecimal systems
+            to decimal, as well as converting decimal numbers to binary, octal, and hexadecimal representations. The
+            program prompts the user to choose a conversion type and the number of digits in the input. It then collects
+            the input digits and performs the conversion accordingly. However, the code seems to have some logical
+            errors and redundancy in collecting user input. It could be improved for better functionality and
+            readability..</p>
+          <div class="flex flex-wrap md:flex-nowrap items-center justify-between mt-4">
+            <img src="Capture5.PNG" alt="Screenshot 3" class="h-48 w-auto">
+            <img src="Capture6.PNG" alt="Screenshot 4" class="h-48 w-auto">
+          </div>
+          <div class="mt-4">
+            <a href="Conversion between number system.zip"
+              class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Download
+              Source Code (ZIP)</a>
           </div>
         </div>
       </div>
@@ -91,11 +212,16 @@
     <section id="contact">
       <h2 class="text-2xl font-bold mb-4 section-heading">Contact Me</h2>
       <ul class="list-disc list-inside mb-4">
-        <li><a href="mailto:bhavya.2006@gmail.com" class="text-blue-500 hover:underline">Email: bhavya.2006@gmail.com</a></li>
-        <li><a href="https://www.instagram.com/bbhavya34/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Instagram: @bbhavya34</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100068716694292" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Facebook: Bhavya Bhatt</a></li>
-        <li><a href="https://www.linkedin.com/in/bhavya-bhatt-281983267/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">linkedin: Bhavya Bhatt</a></li>
-        <li><a href="https://github.com/bbhavya34" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Github: bbhavya34</a></li>
+        <li><a href="mailto:bhavya.2006@gmail.com" class="text-blue-500 hover:underline">Email:
+            bhavya.2006@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/bbhavya34/" target="_blank" rel="noopener noreferrer"
+            class="text-blue-500 hover:underline">Instagram: @bbhavya34</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100068716694292" target="_blank" rel="noopener noreferrer"
+            class="text-blue-500 hover:underline">Facebook: Bhavya Bhatt</a></li>
+        <li><a href="https://www.linkedin.com/in/bhavya-bhatt-281983267/" target="_blank" rel="noopener noreferrer"
+            class="text-blue-500 hover:underline">linkedin: Bhavya Bhatt</a></li>
+        <li><a href="https://github.com/bbhavya34" target="_blank" rel="noopener noreferrer"
+            class="text-blue-500 hover:underline">Github: bbhavya34</a></li>
       </ul>
       <form class="max-w-sm">
         <!-- Form fields go here -->
@@ -105,5 +231,44 @@
   <footer class="bg-transparent py-4 text-center">
     <p class="text-gray-200">&copy; 2023 Bhavya Bhatt</p>
   </footer>
+
+  <script>
+    function toggleTheme() {
+      const root = document.documentElement;
+      root.classList.toggle("dark-theme");
+
+      // Save the current theme preference in local storage
+      const currentTheme = root.classList.contains("dark-theme") ? "dark" : "light";
+      localStorage.setItem("theme", currentTheme);
+    }
+
+    // Load the saved theme preference from local storage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      const root = document.documentElement;
+      root.classList.add("dark-theme");
+    }
+  </script>
+  <!-- Add this script after the closing </body> tag -->
+  <script>
+    // Toggle the responsive navigation menu
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Hide the responsive navigation menu when a menu item is clicked
+    function hideMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.add('hidden');
+    }
+
+    // Add event listeners for the menu button and menu items
+    document.getElementById('menu-button').addEventListener('click', toggleMenu);
+    const menuItems = document.querySelectorAll('#menu a');
+    menuItems.forEach(item => item.addEventListener('click', hideMenu));
+  </script>
+
 </body>
+
 </html>
