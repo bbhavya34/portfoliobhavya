@@ -129,9 +129,11 @@
         <li><a href="#projects" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">Projects</a>
         </li>
         <li><a href="#contact" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">Contact</a>
-          <div class="theme-toggle ml-2" onclick="toggleTheme()">
-            <i class="far fa-moon"></i>
-          </div>
+        <li><a href="#practical" class="text-gray-200 hover:text-gray-400 font-semibold section-heading">Practical</a>
+        </li>
+        <div class="theme-toggle ml-2" onclick="toggleTheme()">
+          <i class="far fa-moon"></i>
+        </div>
         </li>
       </ul>
     </nav>
@@ -142,15 +144,24 @@
     <section id="about" class="mb-8">
       <h2 class="text-2xl font-bold mb-4 section-heading">About Me</h2>
       <p id="typed-text" class="about-text"></p>
-      <p class="text-gray-700">
-        <script>
-          var typed = new Typed('#typed-text', {
-            strings: ['Hello, I\'m Bhavya Bhatt, a class 12th student at Kendriya Vidyalaya Pragati Vihar, pursuing PCM+CS.', 'I have a passion for computer science and technology, which led me to choose this stream in my studies.', 'In addition to my academic achievements, I actively participate in extracurricular activities.', 'One notable accomplishment was securing the 2nd position in the SLSMEE exhibition, where I showcased my skills and knowledge in computer science and technology.', 'I am proficient in Python programming language, which allows me to develop innovative solutions and explore various aspects of computer science.', 'Beyond my academic pursuits, I have a diverse range of hobbies and interests.', 'While I haven\'t participated in any internships, workshops, or training programs yet, I am eager to explore these opportunities in the future to further develop my skills and gain practical experience.', 'As I look ahead, I have ambitious career goals in the field of computer science and technology. I aspire to make a positive impact by contributing to technological advancements and innovation.', 'Thank you for visiting my portfolio website. Feel free to explore and get in touch with me if you have any inquiries or collaboration opportunities.'],
-            typeSpeed: 30,
-            backSpeed: 20,
-            loop: true
-          });
-        </script>
+      <p class="text-gray-700 bold">
+        <!-- Square buttons -->
+      <div class="flex space-x-4">
+        <a href="#projects"
+          class="bg-white text-blue-500 py-2 px-4 rounded-md hover:bg-blue-600 hover:text-white border border-blue-500 hover:border-blue-600">Explore
+          Projects</a>
+        <a href="#contact"
+          class="bg-white text-blue-500 py-2 px-4 rounded-md hover:bg-blue-600 hover:text-white border border-blue-500 hover:border-blue-600">Contact</a>
+      </div>
+      </p>
+      <script>
+        var typed = new Typed('#typed-text', {
+          strings: ['Hello, I\'m Bhavya Bhatt, a class 12th student at Kendriya Vidyalaya Pragati Vihar, pursuing PCM+CS.', 'I have a passion for computer science and technology, which led me to choose this stream in my studies.', 'In addition to my academic achievements, I actively participate in extracurricular activities.', 'One notable accomplishment was securing the 2nd position in the SLSMEE exhibition, where I showcased my skills and knowledge in computer science and technology.', 'I am proficient in Python programming language, which allows me to develop innovative solutions and explore various aspects of computer science.', 'Beyond my academic pursuits, I have a diverse range of hobbies and interests.', 'While I haven\'t participated in any internships, workshops, or training programs yet, I am eager to explore these opportunities in the future to further develop my skills and gain practical experience.', 'As I look ahead, I have ambitious career goals in the field of computer science and technology. I aspire to make a positive impact by contributing to technological advancements and innovation.', 'Thank you for visiting my portfolio website. Feel free to explore and get in touch with me if you have any inquiries or collaboration opportunities.'],
+          typeSpeed: 30,
+          backSpeed: 20,
+          loop: true
+        });
+      </script>
     </section>
 
     <section id="projects" class="mb-8">
@@ -186,6 +197,7 @@
             <a href="XIComp.Sc.262.zip" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Download
               Source Code (ZIP)</a>
           </div>
+
         </div>
         <div class="project 3 bg-white p-4 shadow">
           <h3 class="text-lg font-bold mb-2 project-heading">Conversion between number system</h3>
@@ -209,11 +221,541 @@
       </div>
     </section>
 
+    <section id="practical" class="mb-8">
+      <h2 class="text-2xl font-bold mb-4 section-heading">Practical Section (Class 11)</h2>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 1: Write about the basic components of a computer.</h3>
+        <p class="text-gray-700-bold">Find the specs of your computer using your system properties. In case of mine it
+          is:</p>
+        <p>1) 11th gen intel core i7 processor</p>
+        <p>2) windows 11 pro</p>
+        <p>3) Intel iris graphics</p>
+        <p>4) 1 Tb SSD</p>
+        <p>5) 16 GB DDR-4 3400 Mhz Ram</p>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 2: How to check if a number is prime or not?</h3>
+        <p class="text-gray-700-bold">Write a python program to show all possible data type available in python. Here's
+          an example:</p>
+        <pre><code class="language-python">
+a= 1                  #integer
+b=2.0                 #float
+c=5+4j                #complex
+d= "Hello world"      #string
+e= [1,2,3,4,5]        #list
+f={a: 'A'}            #dictionary
+g= (1,2,3,4,5)        #tuple
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+print(type(g))
+print(type(True))</code></pre>
+      </div>
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 3: Write a python program to take 3 numbers from the user and
+          display product of
+          those numbers</h3>
+        <p class="text-gray-700-bold">Write a python program to take 3 numbers from the user and display product of
+          those numbers. Here's
+          an example:</p>
+        <pre><code class="language-python">
+x= int(input("Enter a number: "))
+y= int(input("Enter a number: "))
+z= int(input("Enter a number: "))
+
+product= x*y*z
+print("Product of the numbers are:",product)</code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 4: Write a python program to take radius of a circle and print
+          perimeter and area of the circle</h3>
+        <p class="text-gray-700-bold">Write a python program to take radius of a circle and print perimeter and area of
+          the circle. Here's
+          an example:</p>
+        <pre><code class="language-python">
+r= int(input("Enter a number: "))
+area= round(3.14*(r)**2)
+perimeter= 2*(3.14)*r
+
+print("Area of circle is:", area)
+print("Perimeter of circle is:", perimeter)</code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 5: Write a python program to take length and breadth of rectangle
+          and print area and perimeter</h3>
+        <p class="text-gray-700-bold">Write a python program to take length and breadth of rectangle and print area and
+          perimeter. Here's
+          an example:</p>
+        <pre><code class="language-python">
+length= int(input("Enter the length of rectangle: "))
+bredth= int(input("Enter the bredth of rectangle: "))
+
+area= length*bredth
+perimeter = 2*(length+bredth)
+
+print("Area of rectangle is:", area)
+print("Perimeter of rectangle is:", perimeter)</code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 6: Write a Python program that input a student's marks in five
+          subjects (out of100) and print the percentage.</h3>
+        <p class="text-gray-700-bold">Write a Python program that input a student's marks in five subjects (out of100)
+          and print the percentage.. Here's
+          an example:</p>
+        <pre><code class="language-python">
+physics= int(input("Enter your marks in physics: "))
+chemistry= int(input("Enter your marks in chemistry: "))
+maths= int(input("Enter your marks in maths: "))
+computer= int(input("Enter your marks in computer science: "))
+english= int(input("Enter your marks in english: "))
+
+total_marks= (physics+ chemistry+ maths+computer+ english)/500
+percentage= total_marks*100
+
+print("You scored", percentage, '%')</code></pre>
+      </div>
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 7:Write a program in Python to convert a given temperature from
+          celcius to fahrenheit .</h3>
+        <p class="text-gray-700-bold">Write a program in Python to convert a given temperature from celcius to
+          fahrenheit. Here's an example:</p>
+        <pre><code class="language-python">
+c= int(input("Enter temprature in celcius: "))
+f= (1.8*c)+32
+
+print(c, "degree celcius =", f, "degree farenheit")</code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 8:Write a program in Python to find minimum of three numbers .</h3>
+        <p class="text-gray-700-bold">Write a program in Python to find minimum of three numbers. Here's an example:</p>
+        <pre><code class="language-python">
+a= int(input("Enter a number: "))
+b= int(input("Enter a number: "))
+c= int(input("Enter a number: "))
+
+smallest =0
+if a &#60 b and a &#60 c:
+    smallest=a
+elif b&#60c:
+    smallest= b
+else:
+    smallest=x
+
+print(smallest, &#34 is the smallest of the three.&#34) <code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 9: Write a python program to print table of a number in tabular
+          format given by the user as an input.</h3>
+        <p class="text-gray-700-bold">Write a python program to print table of a number in tabular format given by the
+          user as an input. Here's an example:</p>
+        <pre><code class="language-python">
+x= int(input("Enter a number whose table is to be find: "))
+for i in range(11):
+    print(x, 'x',i , "=", x*i ) <code></pre>
+      </div>
+
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 10: Write a program to print factorial of a number using for loop
+        </h3>
+        <p class="text-gray-700-bold"> Write a program to print factorial of a number using for loop Here's an example:
+        </p>
+        <pre><code class="language-python">
+x= int(input("Enter a number whose factorial you want to find: "))
+factorial= 1
+if x<0:
+    print(&#34No factorial for negetive number. &#34)
+elif x==0:
+    print("Factorial of 0 is 1")
+
+else:
+    for i in range(1, x+1):
+        factorial = factorial*i
+print("Factorial of ",x,"is",factorial)
+  </code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 11: Write a program to print sum of even and odd integers of first n
+          natural numbers.</h3>
+        <p class="text-gray-700-bold"> Write a program to print sum of even and odd integers of first n natural numbers.
+          Here's an example:</p>
+        <pre><code class="language-python">
+# Sum of even numbers
+n= int(input("Write a number: "))
+sum=0
+for i in range(0, n+1, 2):
+    sum+=i
+
+print("Sum of even integer of first n terms =", sum)
+# Sum of odd numbers
+a= int(input("Write a number: "))
+sum2=0
+for i in range(0, a+1, 3):
+    sum+=i
+
+print("Sum of even integer of first n terms =", sum) <code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 12: Write a menu driven program in Python to print the grade of a
+          student based on the marks.</h3>
+        <p class="text-gray-700-bold"> Write a menu driven program in Python to print the grade of a student based on
+          the marks. Here's an example:</p>
+        <pre><code class="language-python">
+if marks>90 and marks<=100:
+  print("Your grade is A+")
+elif marks>80 and marks<=90:
+  print("Your grade is A")
+elif marks>75 and marks<=80:
+  print("Your grade is B")
+elif marks>60 and marks<=75:
+  print("Your grade is C")
+elif marks>50 and marks<=60:
+  print("Your grade is D")
+elif marks>0 and marks<=50:
+  print("Your grade is E")
+else:
+  print("Wrong input")
+<code></pre>
+      </div>
+
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 13: Write a menu driven program in Python to print the given
+          patterns (star,letters, number)..</h3>
+        <p class="text-gray-700-bold"> Write a menu driven program in Python to print the given patterns (star,letters,
+          number).</p>
+        <pre><code class="language-python">
+x= int(input("Enter a number: "))
+if x==1:
+    a= int(input("Enter a numbber upto which you want to print pattern"))
+    for i in range(0,a):
+        for j in range(0, i+1):
+            print('*', end="")
+        print("")
+
+
+elif x==2:
+    a= int(input("Enter a numbber upto which you want to print pattern"))
+    str= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for i in range(0,a):
+        for j in range(0, i+1):
+            print(str[j], end="")
+        print("")
+
+elif x==3:
+
+    a= int(input("Enter a numbber upto which you want to print pattern"))
+    for i in range(0,A):
+        for j in range(0, i+1):
+            print(j, end="")
+        print("")
+    <code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 14: Write a program in Python to print the Fibonacci series up to
+          specified terms.</h3>
+        <p class="text-gray-700-bold">Write a program in Python to print the Fibonacci series up to specified terms.
+          Here's an example:</p>
+        <pre><code class="language-python">
+n= int(input("Enter a number: "))
+n1=0
+n2=1
+count=0
+
+if n<0:
+    print("Please enter a positive integer.")
+elif n==1:
+    print("The fabbonoic deries of the number is:")
+    print(n)
+
+else:
+    print("Seriest upto the number is: ")
+    while count<n:
+        print(n1)
+        nth= n1+n2
+
+        n1=n2
+        n2= nth
+        count+=1<code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 15:Write a menu driven program in Python to check whether the number
+          is Armstrong, check whether the number is prime and check whether the number is palindrome .</h3>
+        <p class="text-gray-700-bold">Write a menu driven program in Python to check whether the number is Armstrong,
+          check whether the number is prime and check whether the number is palindrome</p>
+        <pre><code class="language-python">
+ # Check for armstrong number
+ n= int(input("Enter a number: "))
+ l=n
+ sum=0 
+ z= len(str(n))
+ while n>0:
+     digit=n%10
+     sum+=digit**z
+     n=n//10
+ if sum==l:
+     print("It is an armstrong number")
+ else:
+     print("Not an armstrong number")
+ # Check for palindrome
+ a= str(l)
+ if a[::-1]==a:
+     print("It is a palindrome")
+ 
+ else:
+     print("Not a palindrome")
+ # Prime nor prime number
+ if l%2==0:
+     print("It is not a primr number.")
+ else:
+     print("Prime number")</code></pre>
+      </div>
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 16: Write a program in Python to check whether a character is an
+          alphabet or not and also check its case.</h3>
+        <p class="text-gray-700-bold">Write a program in Python to check whether a character is an alphabet or not and
+          also check its case. Here's an example:</p>
+        <pre><code class="language-python">
+ x= input("ENter a string: ")
+ if x.isalpha() and x.islower():
+     print("It is an alphabet with lower case")
+ elif x.isalpha() and x.isupper():
+     print("It is an alphabet with upper case")
+ else:
+     print("It is not an alphabet") <code></pre>
+      </div>
+
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 17: write a program to find: 1)length of a string 2)Copy a string
+          3)Concat two string 4) Compare two strings 5)Reverse 6) Palindrome.</h3>
+        <p class="text-gray-700-bold">A program to find: 1)length of a string 2)Copy a string 3)Concat two string 4)
+          Compare two strings 5)Reverse 6) Palindrome. Here's an example:</p>
+        <pre><code class="language-python">
+ # To find length of a string
+ print("Length of the string is", len(x))
+ # Copy a string
+ z= "" +x
+ print("Copied string is", z)
+ # Concat two strings.
+ y= input("Enter another string: ")
+ a= x+y
+ print(a)
+ 
+ # Compare two strings
+ print(x==y)
+ print(x>y)
+ print(x<y)
+ print(x!=y)
+ 
+ # Reverse a string
+ b= x[::-1]
+ print("Reversed string is", b)
+ 
+ # Check if string is a palindrome.
+ if x[::-1]==x:
+     print("It is a palindrome")
+ 
+ else:
+     print("Not a palindrome")
+<code></pre>
+      </div>
+
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 18:Write a menu driven program in Python to count number of words,
+          characters, vowels, digits and alphabets in a given string.</h3>
+        <p class="text-gray-700-bold">Write a menu driven program in Python to count number of words, characters,
+          vowels, digits and alphabets in a given string Here's an example:</p>
+        <pre><code class="language-python">
+ x = input("Enter a string: ")
+ vowels = ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', "U")
+ count = 0
+ count_of_digit = 0
+ alphabet = 0
+ for i in x:
+   if i.isdigit():
+     count_of_digit += 1
+   elif i.isalpha():
+     alphabet += 1
+   if i in vowels:
+     count += 1
+ 
+ y = x.split()
+ print("number of words are:", len(y))
+ print("number of digit is: ", count_of_digit)
+ print("number of alphabet is: ", alphabet)
+ print("number of charectar is: ", len(x))
+ print("Number of vowel is:", count)<code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 19:Write a program in Python to find the largest and smallest
+          element in a list.</h3>
+        <p class="text-gray-700-bold">Write a program in Python to find the largest and smallest element in a list.
+          Here's an example:</p>
+        <pre><code class="language-python">
+list1= []
+for i in range(5):
+    x=int(input("Enter a element: "))
+    list1.append(x)
+print("You entered this list:", list1)
+
+y=max(list1)
+z=min(list1)
+print("Minimum value of the list is", z)
+print("Maximum value of the list is", y)<code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 20:Write a program in Python to search a specified element in a
+          given list.</h3>
+        <p class="text-gray-700-bold">Write a program in Python to search a specified element in a given list. Here's an
+          example:</p>
+        <pre><code class="language-python">
+list1= []
+for i in range(5):
+  x=int(input("Enter a element: "))
+  list1.append(x)
+print("You entered this list:", list1)
+y= input("Enter the element you want to find: ")
+  
+for j in range(len(list1)):
+    if y==list1[j]:
+        print("Present in list")
+        break
+else:
+    print("not present in list")
+          <code></pre>
+      </div>
+
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 21:Write a menu driven program in Python to reverse the list, find
+          the sum of elements of list, and find average and standard deviation.</h3>
+        <p class="text-gray-700-bold">Write a menu driven program in Python to reverse the list, find the sum of
+          elements of list, and find average and standard deviation. Here's an example:</p>
+        <pre><code class="language-python">
+prompt= int(input("1 for reversed list , 2 for sum of list 3 for average of list 4 for standard deviation "))
+a = int(input("Enter the maximum no. of element: "))
+list = []
+
+for i in range(a):
+  x = int(input("Enter an element. "))
+  list.append(x)
+print("The original list : " + str(list))
+b = sum(list)
+mean = b / a
+variation = sum([((x - mean)**2) for x in list]) / a
+deviation = variation**0.5
+
+
+if prompt==1:
+  print("reversed list is:", list[::-1])
+
+elif prompt==2:
+  print("Sum of the list is:", b)
+elif prompt==3:
+  print("Average of the list is:", mean)
+elif prompt==4:
+  print("Standard deviation of ths list is  is : " + str(deviation))
+
+else:
+  print("Wrong input")<code></pre>
+      </div>
+
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 22:Write a Python program to calculate the product, multiplying all
+          the numbers of a given tuple.</h3>
+        <p class="text-gray-700-bold">Write a Python program to calculate the product, multiplying all the numbers of a
+          given tuple.. Here's an example:</p>
+        <pre><code class="language-python">
+tup= (1,2,3,4,5,6,7,8,9,3,233,4,2,3,1,2,3,4)
+product= 1
+
+for i in tup:
+    product= product*i
+print("Product of the tuple is:",product)
+          
+          <code></pre>
+      </div>
+
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 23:write a python script to print a dictinary which is storing
+          student roll_no as a key and their (name, marks as values).</h3>
+        <p class="text-gray-700-bold">write a python script to print a dictinary which is storing student roll_no as a
+          key and their (name, marks as values). Here's an example:</p>
+        <pre><code class="language-python">
+ = int(input("How much student you want to store: "))
+d={}
+for i in range (n):
+    x= input("Enter roll_no")
+    y= input("Enter name")
+    z= input("Enter marks")
+    d[x]=(y,z)
+
+print(d)
+<code></pre>
+      </div>
+
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Question 24:write a python program to get the frequency of every charectar of
+          a string entered by a user uing dictionary.</h3>
+        <p class="text-gray-700-bold">write a python program to get the frequency of every charectar of a string entered
+          by a user uing dictionary. Here's an example:</p>
+        <pre><code class="language-python">
+x= input("Enter a string: ")
+d={}
+
+for i in x:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+
+for j in d:
+    if j.isspace():
+        continue
+    else:
+        print(j, 'repets',d[j], 'time(s)')<code></pre>
+      </div>
+
+      <div class="practical-item">
+        <h3 class="text-lg font-bold mb-2">Download Practical Examples</h3>
+        <p class="text-gray-700-bold">Click the button below to download a zip file containing all the practical
+          examples:</p>
+        <div class="mt-4">
+          <a href="Class 11 practicals.zip"
+            class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Download ZIP</a>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <h2 class="text-2xl font-bold mb-4 section-heading">Contact Me</h2>
       <ul class="list-disc list-inside mb-4">
-        <li><a href="mailto:bhavya.2006@gmail.com" class="text-blue-500 hover:underline">Email:
-            bhavya.2006@gmail.com</a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=bhavya.2006@gmail.com"
+            class="text-blue-500 hover:underline">Email: bhavya.2006@gmail.com</a></li>
+
         <li><a href="https://www.instagram.com/bbhavya34/" target="_blank" rel="noopener noreferrer"
             class="text-blue-500 hover:underline">Instagram: @bbhavya34</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=100068716694292" target="_blank" rel="noopener noreferrer"
@@ -222,14 +764,18 @@
             class="text-blue-500 hover:underline">linkedin: Bhavya Bhatt</a></li>
         <li><a href="https://github.com/bbhavya34" target="_blank" rel="noopener noreferrer"
             class="text-blue-500 hover:underline">Github: bbhavya34</a></li>
+
+        <li><a href="https://replit.com/@bbhavya34" target="_blank" rel="noopener noreferrer"
+            class="text-blue-500 hover:underline">replit: bbhavya34</a></li>
       </ul>
       <form class="max-w-sm">
         <!-- Form fields go here -->
       </form>
     </section>
+
   </main>
   <footer class="bg-transparent py-4 text-center">
-    <p class="text-gray-200">&copy; 2023 Bhavya Bhatt</p>
+    <p class="text-gray-200">Copyright &copy; 2023 Bhavya Bhatt</p>
   </footer>
 
   <script>
